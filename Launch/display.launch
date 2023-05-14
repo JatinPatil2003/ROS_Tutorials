@@ -1,7 +1,7 @@
 <launch>
 
   <arg name="model" default="$(find ROS_Tutorials)/urdf/2R.urdf"/>
-  <arg name="gui" default="false" />
+  <arg name="gui" default="true" />
   <arg name="rvizconfig" default="$(find ROS_Tutorials)/rviz/urdf.rviz" />
 
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
